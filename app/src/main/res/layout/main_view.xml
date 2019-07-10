@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainView"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/Calendar"
+        android:orientation="vertical"
+        android:layout_width="62dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:id="@+id/toCalendar"
+            android:gravity="center"
+            android:background="@drawable/calendar"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:text="Calendar"
+            android:textColor="#000"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Programs"
+        android:orientation="vertical"
+        android:layout_width="62dp"
+        android:layout_height="96dp"
+        android:layout_alignTop="@+id/Calendar"
+        android:layout_toLeftOf="@+id/Calendar"
+        android:layout_marginRight="20dp" >
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:id="@+id/toPrograms"
+            android:gravity="center"
+            android:background="@drawable/programs"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:text="Programs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Schedule"
+        android:orientation="vertical"
+        android:layout_width="62dp"
+        android:layout_height="96dp"
+        android:layout_alignTop="@+id/Calendar"
+        android:layout_toRightOf="@+id/Calendar"
+        android:layout_toEndOf="@+id/Calendar"
+        android:layout_marginLeft="20dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:id="@+id/toSchedule"
+            android:gravity="center"
+            android:background="@drawable/schedule"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:text="Schedule"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/News"
+        android:orientation="vertical"
+        android:layout_width="62dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/Programs"
+        android:layout_alignLeft="@+id/Programs"
+        android:layout_alignStart="@+id/Programs">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:id="@+id/toNews"
+            android:gravity="center"
+            android:background="@drawable/news"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:text="News"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Contacts"
+        android:orientation="vertical"
+        android:layout_width="62dp"
+        android:layout_height="96dp"
+        android:layout_alignTop="@+id/News"
+        android:layout_alignLeft="@+id/Calendar"
+        android:layout_alignStart="@+id/Calendar">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:id="@+id/toContacts"
+            android:gravity="center"
+            android:background="@drawable/contacts"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:text="Contacts"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Metrobus"
+        android:orientation="vertical"
+        android:layout_width="62dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/Schedule"
+        android:layout_alignLeft="@+id/Schedule"
+        android:layout_alignStart="@+id/Schedule">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:id="@+id/toMetrobus"
+            android:gravity="center"
+            android:background="@drawable/bus"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:text="Metrobus"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Contacts"
+        android:layout_toLeftOf="@+id/Schedule"
+        android:layout_toStartOf="@+id/Schedule">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity = "center_vertical|center_horizontal"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:id="@+id/loadingPanelaa"
+            android:layout_below="@+id/Contacts"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/toInfo"
+        android:gravity="center"
+        android:background="@drawable/info"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

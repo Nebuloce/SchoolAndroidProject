@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+
+android {
+    android {
+        compileSdkVersion 20
+        buildToolsVersion '19.1.0'
+
+        defaultConfig {
+            minSdkVersion 14
+            targetSdkVersion 20
+        }
+    }
+    dependencies {
+        compile 'com.android.support:appcompat-v7:19.+'
+        compile 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+    }
+
+}

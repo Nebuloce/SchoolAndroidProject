@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:background="#dddce0"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:id="@+id/previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/left_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textColor="#666"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/right_arrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/daystable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="1"
+        android:background="#dddce0"
+        android:layout_below="@id/header" >
+
+
+        <TableRow
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sun"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Mon"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Tue"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Wed"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Thu"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Fri"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Sat"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_below="@+id/daystable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:id="@+id/shadow"
+        android:layout_below="@+id/gridview"
+        android:background="@drawable/shadow"
+        />
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_below="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</RelativeLayout>

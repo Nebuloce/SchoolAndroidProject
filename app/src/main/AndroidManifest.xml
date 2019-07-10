@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nebul.cnaapp" >
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/csp_alt"
+        android:background="#00a1e4" >
+
+        <activity
+            android:name=".MainView"
+            android:label="Home"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ProgramsList"
+            android:label="Programs"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CourseActivity"
+            android:label="Course"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CoursesActivity"
+            android:label="Courses"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".NewsNewsActivity"
+            android:label="News"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".DetailNewsActivity"
+            android:label="Detailed News"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".NewsSelect"
+            android:label="Select News"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Contacts"
+            android:label="Contacts"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CalendarMain"
+            android:label="Calendar"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".NewsActivity"
+            android:label="No Idea"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="Schedule"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
