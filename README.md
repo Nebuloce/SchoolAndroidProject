@@ -5,4 +5,4 @@ This project takes some parts of Branko Cirovic's android examples (Made in Andr
 
 
 Home screen:
-[[https://github.com/nebuloce/repository/blob/master/imgaages/HomeScreen.jpg|alt=HomeScreen]]
+[[https://github.com/Nebuloce/images/HomeScreen.jpg|alt=HomeScreen]]
